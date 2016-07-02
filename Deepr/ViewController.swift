@@ -37,6 +37,9 @@ class ViewController: UIViewController {
     
     func mainButtonTapped(sender: UIButton) {
         print(sender.tag)
+        let SecondSelectionViewInstance = SecondSelectionView.instance()
+        
+        self.MainScrollView.addSubview(SecondSelectionViewInstance)
     }
 
 
