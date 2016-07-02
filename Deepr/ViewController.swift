@@ -12,10 +12,11 @@ class ViewController: UIViewController {
 
     @IBOutlet var MainScrollView: UIScrollView!
     
+    var MainSelectionViewInstance = MainSelectionView.instance()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Deepr!"
-        let MainSelectionViewInstance = MainSelectionView.instance()
         
         for mainSelection in MainSelectionViewInstance.mailSelections {
             mainSelection.addTarget(self, action: #selector(ViewController.mainButtonTapped(_:)), forControlEvents: .TouchUpInside)
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
         print(sender.tag)
         let SecondSelectionViewInstance = SecondSelectionView.instance()
         
-        self.MainScrollView.addSubview(SecondSelectionViewInstance)
+        self.MainScrollView.insertSubview(SecondSelectionViewInstance, belowSubview: MainSelectionViewInstance)
     }
 
 
