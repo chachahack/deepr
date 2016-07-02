@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Deepr!"
-        
         self.MainScrollView.addSubview(MainSelectionView.instance())
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

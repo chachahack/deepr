@@ -18,6 +18,9 @@
                         <constraint firstAttribute="width" constant="155" id="rUm-BN-Jg3"/>
                     </constraints>
                     <state key="normal" title="Button" image="dinner_155x250.png"/>
+                    <connections>
+                        <action selector="dinnerTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="qOB-Ia-cPa"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aP-mr-NXj">
                     <rect key="frame" x="205" y="300" width="155" height="250"/>
@@ -26,6 +29,9 @@
                         <constraint firstAttribute="width" constant="155" id="elz-Pi-4Be"/>
                     </constraints>
                     <state key="normal" title="Button" image="drink_155x250.png"/>
+                    <connections>
+                        <action selector="drinkTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="dPm-PY-myR"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuH-yT-u57">
                     <rect key="frame" x="205" y="25" width="155" height="250"/>
@@ -34,6 +40,9 @@
                         <constraint firstAttribute="width" constant="155" id="I9j-RL-vVB"/>
                     </constraints>
                     <state key="normal" title="Button" image="lunch_155x250.png"/>
+                    <connections>
+                        <action selector="lunchTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="fs1-nQ-zqv"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zU9-zk-fSS">
                     <rect key="frame" x="25" y="25" width="155" height="250"/>
@@ -42,6 +51,9 @@
                         <constraint firstAttribute="height" constant="250" id="57B-eN-u4F"/>
                     </constraints>
                     <state key="normal" title="Button" image="coffee_155x250.png"/>
+                    <connections>
+                        <action selector="coffeeTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="elW-cY-ajw"/>
+                    </connections>
                 </button>
             </subviews>
             <constraints>
