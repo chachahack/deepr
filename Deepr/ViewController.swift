@@ -38,6 +38,10 @@ class ViewController: UIViewController {
     
     func mainButtonTapped(sender: UIButton) {
         print(sender.tag)
+        if sender.tag == 3 {
+            performSegueWithIdentifier("customSegue", sender: self)
+            return
+        }
         let SecondSelectionViewInstance = SecondSelectionView.instance()
         
         /*

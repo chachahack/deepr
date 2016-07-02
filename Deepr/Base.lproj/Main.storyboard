@@ -43,6 +43,7 @@
                     <navigationItem key="navigationItem" id="1sF-NR-yIT"/>
                     <connections>
                         <outlet property="MainScrollView" destination="NxD-7I-xxa" id="MFw-4I-1YT"/>
+                        <segue destination="1PM-1W-Grh" kind="show" identifier="customSegue" id="WVJ-No-PPm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

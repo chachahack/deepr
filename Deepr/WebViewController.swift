@@ -12,12 +12,14 @@ class WebViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
     
+    private let hostname: String = "http://47.89.23.203:3000/"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.title = "Deepr!"
         
-        let requestURL = NSURL(string: "https://ikuwow.github.io")
+        let requestURL = NSURL(string: self.hostname + "#/eat?freeword=&lat=35.660617&lng=139.733686")
         let req = NSURLRequest(URL: requestURL!)
         webView.loadRequest(req)
     }
