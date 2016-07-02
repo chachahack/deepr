@@ -28,6 +28,13 @@
 		7DB94CA31D278646003B076E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB94CA11D278646003B076E /* LaunchScreen.storyboard */; };
 		7DB94CAE1D278646003B076E /* DeeprTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB94CAD1D278646003B076E /* DeeprTests.swift */; };
 		7DB94CB91D278646003B076E /* DeeprUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB94CB81D278646003B076E /* DeeprUITests.swift */; };
+		7DF6A7BB1D288B8000032437 /* Phenomena-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF6A7B41D288B8000032437 /* Phenomena-Black.otf */; };
+		7DF6A7BC1D288B8000032437 /* Phenomena-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF6A7B51D288B8000032437 /* Phenomena-Bold.otf */; };
+		7DF6A7BD1D288B8000032437 /* Phenomena-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF6A7B61D288B8000032437 /* Phenomena-ExtraBold.otf */; };
+		7DF6A7BE1D288B8000032437 /* Phenomena-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF6A7B71D288B8000032437 /* Phenomena-ExtraLight.otf */; };
+		7DF6A7BF1D288B8000032437 /* Phenomena-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF6A7B81D288B8000032437 /* Phenomena-Light.otf */; };
+		7DF6A7C01D288B8000032437 /* Phenomena-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF6A7B91D288B8000032437 /* Phenomena-Regular.otf */; };
+		7DF6A7C11D288B8000032437 /* Phenomena-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF6A7BA1D288B8000032437 /* Phenomena-Thin.otf */; };
 		D04A2257C319BE46D176CF3E /* Pods_DeeprTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E10CC4DFD437199ED2008B7 /* Pods_DeeprTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +86,13 @@
 		7DB94CB41D278646003B076E /* DeeprUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeeprUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB94CB81D278646003B076E /* DeeprUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeprUITests.swift; sourceTree = "<group>"; };
 		7DB94CBA1D278646003B076E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DF6A7B41D288B8000032437 /* Phenomena-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phenomena-Black.otf"; sourceTree = "<group>"; };
+		7DF6A7B51D288B8000032437 /* Phenomena-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phenomena-Bold.otf"; sourceTree = "<group>"; };
+		7DF6A7B61D288B8000032437 /* Phenomena-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phenomena-ExtraBold.otf"; sourceTree = "<group>"; };
+		7DF6A7B71D288B8000032437 /* Phenomena-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phenomena-ExtraLight.otf"; sourceTree = "<group>"; };
+		7DF6A7B81D288B8000032437 /* Phenomena-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phenomena-Light.otf"; sourceTree = "<group>"; };
+		7DF6A7B91D288B8000032437 /* Phenomena-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phenomena-Regular.otf"; sourceTree = "<group>"; };
+		7DF6A7BA1D288B8000032437 /* Phenomena-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phenomena-Thin.otf"; sourceTree = "<group>"; };
 		A8D5EB1B3E7C9630004CF142 /* Pods_Deepr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deepr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5F3A1FC91D72EF354591E5 /* Pods-Deepr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deepr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Deepr/Pods-Deepr.debug.xcconfig"; sourceTree = "<group>"; };
 		CC6B870B9FCC159462A657B4 /* Pods-DeeprUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeeprUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeeprUITests/Pods-DeeprUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +182,7 @@
 				7D6F0EA31D283DAF0042D9BA /* MainSelectionView.xib */,
 				7D6F0EA51D285E570042D9BA /* SecondSelectionView.xib */,
 				7D6F0EA71D285E6B0042D9BA /* SecondSelectionView.swift */,
+				7DF6A7B31D288B8000032437 /* Phenomena */,
 				7D174AD11D27A537006CAE17 /* WebViewController.swift */,
 				7DB94C9F1D278645003B076E /* Assets.xcassets */,
 				7D6F0E941D2831B10042D9BA /* imgs */,
@@ -194,6 +209,20 @@
 				7DB94CBA1D278646003B076E /* Info.plist */,
 			);
 			path = DeeprUITests;
+			sourceTree = "<group>";
+		};
+		7DF6A7B31D288B8000032437 /* Phenomena */ = {
+			isa = PBXGroup;
+			children = (
+				7DF6A7B41D288B8000032437 /* Phenomena-Black.otf */,
+				7DF6A7B51D288B8000032437 /* Phenomena-Bold.otf */,
+				7DF6A7B61D288B8000032437 /* Phenomena-ExtraBold.otf */,
+				7DF6A7B71D288B8000032437 /* Phenomena-ExtraLight.otf */,
+				7DF6A7B81D288B8000032437 /* Phenomena-Light.otf */,
+				7DF6A7B91D288B8000032437 /* Phenomena-Regular.otf */,
+				7DF6A7BA1D288B8000032437 /* Phenomena-Thin.otf */,
+			);
+			path = Phenomena;
 			sourceTree = "<group>";
 		};
 		B62FFA1A6990494698BE4DEB /* Pods */ = {
@@ -324,14 +353,21 @@
 			files = (
 				7DB94CA31D278646003B076E /* LaunchScreen.storyboard in Resources */,
 				7DB94CA01D278645003B076E /* Assets.xcassets in Resources */,
+				7DF6A7BC1D288B8000032437 /* Phenomena-Bold.otf in Resources */,
+				7DF6A7BE1D288B8000032437 /* Phenomena-ExtraLight.otf in Resources */,
 				7D6F0E9C1D283A2B0042D9BA /* dinner_155x250.png in Resources */,
+				7DF6A7BF1D288B8000032437 /* Phenomena-Light.otf in Resources */,
+				7DF6A7C01D288B8000032437 /* Phenomena-Regular.otf in Resources */,
 				7DB94C9B1D278645003B076E /* Main.storyboard in Resources */,
 				7D6F0E9B1D283A2B0042D9BA /* coffee_155x250.png in Resources */,
 				7D6F0E9D1D283A2B0042D9BA /* drink_155x250.png in Resources */,
 				7D6F0E961D2831B10042D9BA /* sample-button.png in Resources */,
+				7DF6A7BD1D288B8000032437 /* Phenomena-ExtraBold.otf in Resources */,
 				7D6F0EA61D285E570042D9BA /* SecondSelectionView.xib in Resources */,
 				7D6F0EA41D283DAF0042D9BA /* MainSelectionView.xib in Resources */,
 				7D6F0E9E1D283A2B0042D9BA /* lunch_155x250.png in Resources */,
+				7DF6A7C11D288B8000032437 /* Phenomena-Thin.otf in Resources */,
+				7DF6A7BB1D288B8000032437 /* Phenomena-Black.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
