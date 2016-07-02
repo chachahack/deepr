@@ -15,7 +15,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Deepr!"
-        self.MainScrollView.addSubview(MainSelectionView.instance())
+        let MainSelectionViewInstance = MainSelectionView.instance()
+        
+        for mainSelection in MainSelectionViewInstance.mailSelections {
+            mainSelection.addTarget(self, action: #selector(ViewController.mainButtonTapped(_:)), forControlEvents: .TouchUpInside)
+        }
+        
+        self.MainScrollView.addSubview(MainSelectionViewInstance)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -27,6 +33,10 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    func mainButtonTapped(sender: UIButton) {
+        print(sender.tag)
     }
 
 
