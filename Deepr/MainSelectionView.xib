@@ -8,11 +8,35 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainSelectionView" customModule="Deepr" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MainSelectionView" customModule="Deepr" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="380" height="570"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zU9-zk-fSS">
-                    <rect key="frame" x="207" y="142" width="155" height="250"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esh-4s-8MZ">
+                    <rect key="frame" x="25" y="300" width="155" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="Zlw-Gt-LGX"/>
+                        <constraint firstAttribute="width" constant="155" id="rUm-BN-Jg3"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="dinner_155x250.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aP-mr-NXj">
+                    <rect key="frame" x="205" y="300" width="155" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="Ost-df-P3T"/>
+                        <constraint firstAttribute="width" constant="155" id="elz-Pi-4Be"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="drink_155x250.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuH-yT-u57">
+                    <rect key="frame" x="205" y="25" width="155" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="1qd-g3-72f"/>
+                        <constraint firstAttribute="width" constant="155" id="I9j-RL-vVB"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="lunch_155x250.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zU9-zk-fSS">
+                    <rect key="frame" x="25" y="25" width="155" height="250"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="155" id="0Vf-yF-wMb"/>
                         <constraint firstAttribute="height" constant="250" id="57B-eN-u4F"/>
@@ -20,13 +44,35 @@
                     <state key="normal" title="Button" image="coffee_155x250.png"/>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="esh-4s-8MZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="1ao-Gy-zEY"/>
+                <constraint firstItem="1aP-mr-NXj" firstAttribute="trailing" secondItem="uuH-yT-u57" secondAttribute="trailing" id="3mi-MJ-7sX"/>
+                <constraint firstItem="1aP-mr-NXj" firstAttribute="leading" secondItem="esh-4s-8MZ" secondAttribute="trailing" constant="25" id="4nJ-01-jTz"/>
+                <constraint firstAttribute="bottom" secondItem="esh-4s-8MZ" secondAttribute="bottom" constant="25" id="8pV-G9-6pU"/>
+                <constraint firstItem="uuH-yT-u57" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="ASG-QB-TLW"/>
+                <constraint firstItem="zU9-zk-fSS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="AeY-Lv-GCc"/>
+                <constraint firstAttribute="bottom" secondItem="1aP-mr-NXj" secondAttribute="bottom" constant="25" id="Cht-En-9AL"/>
+                <constraint firstItem="1aP-mr-NXj" firstAttribute="top" secondItem="uuH-yT-u57" secondAttribute="bottom" constant="25" id="MIv-Fh-x11"/>
+                <constraint firstItem="uuH-yT-u57" firstAttribute="leading" secondItem="zU9-zk-fSS" secondAttribute="trailing" constant="25" id="PTA-y9-7Yh"/>
+                <constraint firstItem="1aP-mr-NXj" firstAttribute="bottom" secondItem="esh-4s-8MZ" secondAttribute="bottom" id="QaX-Rd-6qq"/>
+                <constraint firstItem="uuH-yT-u57" firstAttribute="top" secondItem="zU9-zk-fSS" secondAttribute="top" id="Qx5-QQ-Gp0"/>
+                <constraint firstAttribute="trailing" secondItem="uuH-yT-u57" secondAttribute="trailing" constant="25" id="WEh-ik-tsC"/>
+                <constraint firstItem="zU9-zk-fSS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="Y22-Pi-yeC"/>
+                <constraint firstAttribute="trailing" secondItem="1aP-mr-NXj" secondAttribute="trailing" constant="25" id="gb6-an-dlQ"/>
+                <constraint firstItem="esh-4s-8MZ" firstAttribute="top" secondItem="zU9-zk-fSS" secondAttribute="bottom" constant="25" id="qTE-G6-HVO"/>
+                <constraint firstItem="esh-4s-8MZ" firstAttribute="leading" secondItem="zU9-zk-fSS" secondAttribute="leading" id="uCq-Hf-b6l"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="CoffeeSelectionView" destination="zU9-zk-fSS" id="nZb-nA-YYr"/>
             </connections>
+            <point key="canvasLocation" x="90" y="395"/>
         </view>
     </objects>
     <resources>
         <image name="coffee_155x250.png" width="310" height="500"/>
+        <image name="dinner_155x250.png" width="310" height="500"/>
+        <image name="drink_155x250.png" width="310" height="500"/>
+        <image name="lunch_155x250.png" width="310" height="500"/>
     </resources>
 </document>
