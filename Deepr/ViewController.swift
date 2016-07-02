@@ -40,8 +40,30 @@ class ViewController: UIViewController {
         print(sender.tag)
         let SecondSelectionViewInstance = SecondSelectionView.instance()
         
+        /*
+        let width = self.MainScrollView.frame.size.width
+        let height = self.MainScrollView.frame.size.height
+        */
+        SecondSelectionViewInstance.frame = CGRect(
+            x: 0,
+            y: 300,
+            width: 400,
+            height: 400
+        )
+        
+        let plusheight:CGFloat  = 800.0;
+
+        self.MainScrollView.contentSize = CGSizeMake(
+            self.MainScrollView.contentSize.width,
+            self.MainScrollView.contentSize.height + plusheight
+        )
+        
         self.MainScrollView.insertSubview(SecondSelectionViewInstance, belowSubview: MainSelectionViewInstance)
+        
+        let scrollPoint = CGPoint(x: 0.0, y: plusheight)
+        self.MainScrollView.setContentOffset(scrollPoint,animated: true)
     }
+
 
 
 }
