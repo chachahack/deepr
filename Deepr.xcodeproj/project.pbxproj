@@ -11,6 +11,7 @@
 		28BC5231DE5C5AEBDA516BB7 /* Pods_Deepr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D5EB1B3E7C9630004CF142 /* Pods_Deepr.framework */; };
 		7D174AD21D27A537006CAE17 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D174AD11D27A537006CAE17 /* WebViewController.swift */; };
 		7D6A16E31D28071200EBA973 /* OKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6A16E21D28071200EBA973 /* OKViewController.swift */; };
+		7D6F0E961D2831B10042D9BA /* sample-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F0E951D2831B10042D9BA /* sample-button.png */; };
 		7DB94C961D278645003B076E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB94C951D278645003B076E /* AppDelegate.swift */; };
 		7DB94C981D278645003B076E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB94C971D278645003B076E /* ViewController.swift */; };
 		7DB94C9B1D278645003B076E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB94C991D278645003B076E /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		6F421BA4B627A8B979A29077 /* Pods-DeeprUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeeprUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeeprUITests/Pods-DeeprUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7D174AD11D27A537006CAE17 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		7D6A16E21D28071200EBA973 /* OKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OKViewController.swift; sourceTree = "<group>"; };
+		7D6F0E951D2831B10042D9BA /* sample-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-button.png"; sourceTree = "<group>"; };
 		7DB94C921D278645003B076E /* Deepr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deepr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB94C951D278645003B076E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DB94C971D278645003B076E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7D6F0E941D2831B10042D9BA /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				7D6F0E951D2831B10042D9BA /* sample-button.png */,
+			);
+			path = imgs;
+			sourceTree = "<group>";
+		};
 		7DB94C891D278645003B076E = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +146,7 @@
 				7DB94C991D278645003B076E /* Main.storyboard */,
 				7D174AD11D27A537006CAE17 /* WebViewController.swift */,
 				7DB94C9F1D278645003B076E /* Assets.xcassets */,
+				7D6F0E941D2831B10042D9BA /* imgs */,
 				7DB94CA11D278646003B076E /* LaunchScreen.storyboard */,
 				7DB94CA41D278646003B076E /* Info.plist */,
 				7DB94C9C1D278645003B076E /* Deepr.xcdatamodeld */,
@@ -290,6 +301,7 @@
 				7DB94CA31D278646003B076E /* LaunchScreen.storyboard in Resources */,
 				7DB94CA01D278645003B076E /* Assets.xcassets in Resources */,
 				7DB94C9B1D278645003B076E /* Main.storyboard in Resources */,
+				7D6F0E961D2831B10042D9BA /* sample-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
