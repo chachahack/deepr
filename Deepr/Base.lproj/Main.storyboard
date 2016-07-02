@@ -32,50 +32,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Deepr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="aGd-Zy-zlW"/>
+                        <viewControllerLayoutGuide type="bottom" id="UpO-Lg-ACd"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="NxD-7I-xxa">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Gc-Br-GcI">
-                                <rect key="frame" x="98" y="96" width="405" height="476"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8J-EG-CY7">
-                                        <rect key="frame" x="47" y="8" width="156" height="225"/>
-                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                        <state key="normal" backgroundImage="sample-button.png"/>
-                                        <connections>
-                                            <segue destination="1PM-1W-Grh" kind="show" id="LPP-J2-WS4"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQp-pP-McA">
-                                        <rect key="frame" x="232" y="251" width="139" height="225"/>
-                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                        <state key="normal" backgroundImage="sample-button.png"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xc5-lF-ehL">
-                                        <rect key="frame" x="232" y="8" width="139" height="225"/>
-                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                        <state key="normal" backgroundImage="sample-button.png"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaL-NX-ZJb">
-                                        <rect key="frame" x="47" y="251" width="156" height="225"/>
-                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                        <state key="normal" backgroundImage="sample-button.png"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.24313725490196078" green="0.33333333333333331" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.24313725490196078" green="0.33333333333333331" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="6Gc-Br-GcI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="34" id="4PW-V5-ZnL"/>
-                            <constraint firstItem="6Gc-Br-GcI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GPj-on-rGB"/>
-                        </constraints>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </scrollView>
                     <navigationItem key="navigationItem" id="1sF-NR-yIT"/>
+                    <connections>
+                        <outlet property="MainScrollView" destination="NxD-7I-xxa" id="MFw-4I-1YT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,7 +144,4 @@
             <point key="canvasLocation" x="1793" y="-137"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="sample-button.png" width="82" height="133"/>
-    </resources>
 </document>

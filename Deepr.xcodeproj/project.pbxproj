@@ -12,6 +12,12 @@
 		7D174AD21D27A537006CAE17 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D174AD11D27A537006CAE17 /* WebViewController.swift */; };
 		7D6A16E31D28071200EBA973 /* OKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6A16E21D28071200EBA973 /* OKViewController.swift */; };
 		7D6F0E961D2831B10042D9BA /* sample-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F0E951D2831B10042D9BA /* sample-button.png */; };
+		7D6F0E9B1D283A2B0042D9BA /* coffee_155x250.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F0E971D283A2B0042D9BA /* coffee_155x250.png */; };
+		7D6F0E9C1D283A2B0042D9BA /* dinner_155x250.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F0E981D283A2B0042D9BA /* dinner_155x250.png */; };
+		7D6F0E9D1D283A2B0042D9BA /* drink_155x250.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F0E991D283A2B0042D9BA /* drink_155x250.png */; };
+		7D6F0E9E1D283A2B0042D9BA /* lunch_155x250.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F0E9A1D283A2B0042D9BA /* lunch_155x250.png */; };
+		7D6F0EA21D283D9F0042D9BA /* MainSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F0EA11D283D9F0042D9BA /* MainSelectionView.swift */; };
+		7D6F0EA41D283DAF0042D9BA /* MainSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D6F0EA31D283DAF0042D9BA /* MainSelectionView.xib */; };
 		7DB94C961D278645003B076E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB94C951D278645003B076E /* AppDelegate.swift */; };
 		7DB94C981D278645003B076E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB94C971D278645003B076E /* ViewController.swift */; };
 		7DB94C9B1D278645003B076E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB94C991D278645003B076E /* Main.storyboard */; };
@@ -49,6 +55,12 @@
 		7D174AD11D27A537006CAE17 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		7D6A16E21D28071200EBA973 /* OKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OKViewController.swift; sourceTree = "<group>"; };
 		7D6F0E951D2831B10042D9BA /* sample-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-button.png"; sourceTree = "<group>"; };
+		7D6F0E971D283A2B0042D9BA /* coffee_155x250.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffee_155x250.png; sourceTree = "<group>"; };
+		7D6F0E981D283A2B0042D9BA /* dinner_155x250.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dinner_155x250.png; sourceTree = "<group>"; };
+		7D6F0E991D283A2B0042D9BA /* drink_155x250.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drink_155x250.png; sourceTree = "<group>"; };
+		7D6F0E9A1D283A2B0042D9BA /* lunch_155x250.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lunch_155x250.png; sourceTree = "<group>"; };
+		7D6F0EA11D283D9F0042D9BA /* MainSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainSelectionView.swift; path = ../../deepr/Deepr/MainSelectionView.swift; sourceTree = "<group>"; };
+		7D6F0EA31D283DAF0042D9BA /* MainSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainSelectionView.xib; sourceTree = "<group>"; };
 		7DB94C921D278645003B076E /* Deepr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deepr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB94C951D278645003B076E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DB94C971D278645003B076E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +122,10 @@
 		7D6F0E941D2831B10042D9BA /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				7D6F0E971D283A2B0042D9BA /* coffee_155x250.png */,
+				7D6F0E981D283A2B0042D9BA /* dinner_155x250.png */,
+				7D6F0E991D283A2B0042D9BA /* drink_155x250.png */,
+				7D6F0E9A1D283A2B0042D9BA /* lunch_155x250.png */,
 				7D6F0E951D2831B10042D9BA /* sample-button.png */,
 			);
 			path = imgs;
@@ -144,6 +160,8 @@
 				7D6A16E21D28071200EBA973 /* OKViewController.swift */,
 				7DB94C971D278645003B076E /* ViewController.swift */,
 				7DB94C991D278645003B076E /* Main.storyboard */,
+				7D6F0EA11D283D9F0042D9BA /* MainSelectionView.swift */,
+				7D6F0EA31D283DAF0042D9BA /* MainSelectionView.xib */,
 				7D174AD11D27A537006CAE17 /* WebViewController.swift */,
 				7DB94C9F1D278645003B076E /* Assets.xcassets */,
 				7D6F0E941D2831B10042D9BA /* imgs */,
@@ -300,8 +318,13 @@
 			files = (
 				7DB94CA31D278646003B076E /* LaunchScreen.storyboard in Resources */,
 				7DB94CA01D278645003B076E /* Assets.xcassets in Resources */,
+				7D6F0E9C1D283A2B0042D9BA /* dinner_155x250.png in Resources */,
 				7DB94C9B1D278645003B076E /* Main.storyboard in Resources */,
+				7D6F0E9B1D283A2B0042D9BA /* coffee_155x250.png in Resources */,
+				7D6F0E9D1D283A2B0042D9BA /* drink_155x250.png in Resources */,
 				7D6F0E961D2831B10042D9BA /* sample-button.png in Resources */,
+				7D6F0EA41D283DAF0042D9BA /* MainSelectionView.xib in Resources */,
+				7D6F0E9E1D283A2B0042D9BA /* lunch_155x250.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +474,7 @@
 			files = (
 				7DB94C981D278645003B076E /* ViewController.swift in Sources */,
 				7DB94C9E1D278645003B076E /* Deepr.xcdatamodeld in Sources */,
+				7D6F0EA21D283D9F0042D9BA /* MainSelectionView.swift in Sources */,
 				7DB94C961D278645003B076E /* AppDelegate.swift in Sources */,
 				7D6A16E31D28071200EBA973 /* OKViewController.swift in Sources */,
 				7D174AD21D27A537006CAE17 /* WebViewController.swift in Sources */,
