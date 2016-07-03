@@ -47,6 +47,12 @@ class ViewController: UIViewController {
             performSegueWithIdentifier("customSegue", sender: self)
             return
         }
+        /*
+        let nextButton = UIButton()
+        let img = UIImage(named: "arrow.png")
+        nextButton.setImage(img, forState: UIControlState.Normal)
+        self.MainScrollView.addSubview(nextButton)
+ */
         
         let originHeight = MainScrollView.bounds.height
         print(originHeight)

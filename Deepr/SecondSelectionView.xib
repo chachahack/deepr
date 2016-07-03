@@ -209,6 +209,12 @@
                 <constraint firstItem="NAy-ys-rlQ" firstAttribute="bottom" secondItem="kRc-pB-0k8" secondAttribute="bottom" id="z3h-to-YWV"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="quickGenres" destination="A0A-wG-h5i" collectionClass="NSMutableArray" id="jx0-f8-BR8"/>
+                <outletCollection property="quickGenres" destination="kRc-pB-0k8" collectionClass="NSMutableArray" id="esT-hx-vz0"/>
+                <outletCollection property="quickGenres" destination="NAy-ys-rlQ" collectionClass="NSMutableArray" id="78P-8q-RvM"/>
+                <outletCollection property="quickGenres" destination="cn9-YN-2Lf" collectionClass="NSMutableArray" id="sgG-2e-cVa"/>
+            </connections>
             <point key="canvasLocation" x="489.5" y="669.5"/>
         </view>
     </objects>

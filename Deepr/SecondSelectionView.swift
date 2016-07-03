@@ -10,6 +10,8 @@ import UIKit
 
 class SecondSelectionView: UIView {
     
+    @IBOutlet var quickGenres: [UIButton]!
+    
     class func instance() -> SecondSelectionView {
         return UINib(nibName: "SecondSelectionView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! SecondSelectionView
     }
