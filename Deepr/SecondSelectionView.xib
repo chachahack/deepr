@@ -26,6 +26,14 @@
                     </constraints>
                     <state key="normal" image="cake.png"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0A-wG-h5i">
+                    <rect key="frame" x="35" y="112" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="SqU-Qh-VjE"/>
+                        <constraint firstAttribute="height" constant="70" id="eji-94-uai"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="noodle.png"/>
+                </button>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAy-ys-rlQ">
                     <rect key="frame" x="191" y="112" width="70" height="70"/>
                     <constraints>
@@ -102,7 +110,7 @@
                     </constraints>
                     <state key="normal" image="thai.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5b-0c-0dx">
+                <button opaque="NO" tag="32" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5b-0c-0dx">
                     <rect key="frame" x="191" y="662" width="150" height="65"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="65" id="Yji-r8-rK9"/>
@@ -111,7 +119,7 @@
                     </constraints>
                     <state key="normal" image="lightfood.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9A-eT-5L5">
+                <button opaque="NO" tag="16" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9A-eT-5L5">
                     <rect key="frame" x="33" y="662" width="150" height="65"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="OZq-1I-TEn"/>
@@ -120,7 +128,7 @@
                     </constraints>
                     <state key="normal" image="allyoucaneat.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="les-8b-vdZ">
+                <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="les-8b-vdZ">
                     <rect key="frame" x="191" y="589" width="150" height="65"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="LeG-uj-qVW"/>
@@ -129,7 +137,7 @@
                     </constraints>
                     <state key="normal" image="family.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oky-TJ-aXZ">
+                <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oky-TJ-aXZ">
                     <rect key="frame" x="33" y="589" width="150" height="65"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="150" id="dg2-JR-6YP"/>
@@ -138,7 +146,7 @@
                     </constraints>
                     <state key="normal" image="romantic.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUP-XM-ZZe">
+                <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUP-XM-ZZe">
                     <rect key="frame" x="191" y="516" width="150" height="65"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="58T-PN-cZT"/>
@@ -147,7 +155,7 @@
                     </constraints>
                     <state key="normal" image="fulloflife.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlG-LU-h2D">
+                <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlG-LU-h2D">
                     <rect key="frame" x="33" y="516" width="150" height="65"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="65" id="Big-cY-7x5"/>
@@ -156,7 +164,7 @@
                     </constraints>
                     <state key="normal" image="quiet.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uct-Ek-szV">
+                <button opaque="NO" tag="64" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uct-Ek-szV">
                     <rect key="frame" x="33" y="735" width="150" height="65"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="65" id="6b6-Bu-hOF"/>
@@ -164,15 +172,6 @@
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="N5d-NQ-wzq"/>
                     </constraints>
                     <state key="normal" image="spicy.png"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fY-WV-qnX">
-                    <rect key="frame" x="191" y="735" width="150" height="65"/>
-                    <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="Dj7-Uf-ttO"/>
-                        <constraint firstAttribute="width" constant="150" id="T5A-yH-lPl"/>
-                        <constraint firstAttribute="height" constant="65" id="tDo-Nx-hP2"/>
-                    </constraints>
-                    <state key="normal" image="conceptual.png"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbX-2q-qUH">
                     <rect key="frame" x="33" y="477" width="308" height="31"/>
@@ -188,13 +187,14 @@
                     </constraints>
                     <state key="normal" image="dinner-top.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0A-wG-h5i">
-                    <rect key="frame" x="35" y="112" width="70" height="70"/>
+                <button opaque="NO" tag="128" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fY-WV-qnX">
+                    <rect key="frame" x="191" y="735" width="150" height="65"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="70" id="SqU-Qh-VjE"/>
-                        <constraint firstAttribute="height" constant="70" id="eji-94-uai"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="Dj7-Uf-ttO"/>
+                        <constraint firstAttribute="width" constant="150" id="T5A-yH-lPl"/>
+                        <constraint firstAttribute="height" constant="65" id="tDo-Nx-hP2"/>
                     </constraints>
-                    <state key="normal" title="Button" image="noodle.png"/>
+                    <state key="normal" image="conceptual.png"/>
                 </button>
             </subviews>
             <constraints>
@@ -214,6 +214,14 @@
                 <outletCollection property="quickGenres" destination="kRc-pB-0k8" collectionClass="NSMutableArray" id="esT-hx-vz0"/>
                 <outletCollection property="quickGenres" destination="NAy-ys-rlQ" collectionClass="NSMutableArray" id="78P-8q-RvM"/>
                 <outletCollection property="quickGenres" destination="cn9-YN-2Lf" collectionClass="NSMutableArray" id="sgG-2e-cVa"/>
+                <outletCollection property="moodCollection" destination="qlG-LU-h2D" collectionClass="NSMutableArray" id="xyo-Y0-4us"/>
+                <outletCollection property="moodCollection" destination="dUP-XM-ZZe" collectionClass="NSMutableArray" id="EgG-yU-pU2"/>
+                <outletCollection property="moodCollection" destination="Oky-TJ-aXZ" collectionClass="NSMutableArray" id="3Cq-4J-chw"/>
+                <outletCollection property="moodCollection" destination="les-8b-vdZ" collectionClass="NSMutableArray" id="3Ef-Cv-grr"/>
+                <outletCollection property="moodCollection" destination="E9A-eT-5L5" collectionClass="NSMutableArray" id="2Aq-z1-gbr"/>
+                <outletCollection property="moodCollection" destination="R5b-0c-0dx" collectionClass="NSMutableArray" id="bb5-KP-SP8"/>
+                <outletCollection property="moodCollection" destination="uct-Ek-szV" collectionClass="NSMutableArray" id="K2K-Ej-wPc"/>
+                <outletCollection property="moodCollection" destination="6fY-WV-qnX" collectionClass="NSMutableArray" id="SeJ-ai-biD"/>
             </connections>
             <point key="canvasLocation" x="489.5" y="669.5"/>
         </view>

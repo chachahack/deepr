@@ -31,20 +31,27 @@ class WebViewController: UIViewController {
         let message = appDelegate.messenger
         
         var freeword = "";
-        switch message! {
-        case 0:
-            freeword = "ラーメン"
-        case 1:
-            freeword = "ステーキ"
-        case 2:
-            freeword = "寿司"
-        case 3:
-            freeword = "スイーツ"
-        default:
-            break
+        if let msg = message {
+            switch msg {
+            case 0:
+                freeword = "ラーメン"
+            case 1:
+                freeword = "ステーキ"
+            case 2:
+                freeword = "寿司"
+            case 3:
+                freeword = "スイーツ"
+            default:
+                break
+            }
+            print(freeword)
         }
-        print(freeword)
-        let requestURL = NSURL(string: self.hostname + "#/eat?freeword=" + freeword.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())! + "&lat=35.660617&lng=139.733686")
+        
+        var md = ""
+        if let mood = appDelegate.moods {
+            md = String(appDelegate.moods!)
+        }
+        let requestURL = NSURL(string: self.hostname + "#/eat?freeword=" + freeword.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())! + "&lat=35.641463&lng=139.698171&seen=dinner&mood=" + md)
         let req = NSURLRequest(URL: requestURL!)
         webView.loadRequest(req)
     }

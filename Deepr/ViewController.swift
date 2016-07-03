@@ -65,14 +65,17 @@ class ViewController: UIViewController {
         for quickGenre in SecondSelectionViewInstance.quickGenres {
             quickGenre.addTarget(self, action: #selector(ViewController.quickGenreButtonTapped(_:)), forControlEvents: .TouchUpInside)
         }
+        for mood in SecondSelectionViewInstance.moodCollection {
+            mood.addTarget(self, action: #selector(ViewController.moodButtonTapped(_:)), forControlEvents: .TouchUpInside)
+        }
         SecondSelectionViewInstance.frame.origin.y = originHeight
         self.MainScrollView.addSubview(SecondSelectionViewInstance)
-    
         
         self.MainScrollView.contentSize.height += SecondSelectionViewInstance.frame.origin.y
         
         let scrollPoint = CGPoint(x: 0.0, y: originHeight - (self.navigationController?.navigationBar.frame.size.height)! - 20)
         self.MainScrollView.setContentOffset(scrollPoint, animated: true)
+        self.MainScrollView.pagingEnabled   = true
         
     }
     
@@ -80,6 +83,14 @@ class ViewController: UIViewController {
         print(sender.tag)
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.messenger = sender.tag
+        performSegueWithIdentifier("quickSegue", sender: self)
+        return
+    }
+    
+    func moodButtonTapped (sender: UIButton) {
+        print(sender.tag)
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.moods = sender.tag
         performSegueWithIdentifier("quickSegue", sender: self)
         return
     }
