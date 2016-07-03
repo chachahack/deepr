@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet var MainScrollView: UIScrollView!
     
     var MainSelectionViewInstance = MainSelectionView.instance()
+    
+    var quickTag: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,12 +67,10 @@ class ViewController: UIViewController {
         }
         SecondSelectionViewInstance.frame.origin.y = originHeight
         self.MainScrollView.addSubview(SecondSelectionViewInstance)
-        
-        // ScrollViewのサイズを新しく追加した分だけ追加する
+    
         
         self.MainScrollView.contentSize.height += SecondSelectionViewInstance.frame.origin.y
         
-        // スクロールする
         let scrollPoint = CGPoint(x: 0.0, y: originHeight - (self.navigationController?.navigationBar.frame.size.height)! - 20)
         self.MainScrollView.setContentOffset(scrollPoint, animated: true)
         
@@ -78,12 +78,16 @@ class ViewController: UIViewController {
     
     func quickGenreButtonTapped (sender: UIButton) {
         print(sender.tag)
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.messenger = sender.tag
+        performSegueWithIdentifier("quickSegue", sender: self)
         return
     }
     
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
+
 
 }
 

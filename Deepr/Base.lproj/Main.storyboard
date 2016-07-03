@@ -45,6 +45,7 @@
                     <connections>
                         <outlet property="MainScrollView" destination="NxD-7I-xxa" id="MFw-4I-1YT"/>
                         <segue destination="1PM-1W-Grh" kind="show" identifier="customSegue" id="WVJ-No-PPm"/>
+                        <segue destination="1PM-1W-Grh" kind="show" identifier="quickSegue" id="veh-Jr-dSK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -158,4 +159,7 @@
     <resources>
         <image name="Unknown.png" width="400" height="400"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="veh-Jr-dSK"/>
+    </inferredMetricsTieBreakers>
 </document>

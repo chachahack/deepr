@@ -10,10 +10,13 @@ import UIKit
 
 class OKViewController: UIViewController {
     
+    var quickTag: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Deepr!"
-        
+        print("tsugi")
+        print(quickTag)
     }
     
     override func viewDidAppear(animated: Bool) {

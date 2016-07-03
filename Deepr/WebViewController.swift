@@ -27,7 +27,24 @@ class WebViewController: UIViewController {
         self.navigationItem.setRightBarButtonItem(shareButtonItem, animated: true)
         
         
-        let requestURL = NSURL(string: self.hostname + "#/eat?freeword=&lat=35.660617&lng=139.733686")
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let message = appDelegate.messenger
+        
+        var freeword = "";
+        switch message! {
+        case 0:
+            freeword = "ラーメン"
+        case 1:
+            freeword = "ステーキ"
+        case 2:
+            freeword = "寿司"
+        case 3:
+            freeword = "スイーツ"
+        default:
+            break
+        }
+        print(freeword)
+        let requestURL = NSURL(string: self.hostname + "#/eat?freeword=" + freeword.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())! + "&lat=35.660617&lng=139.733686")
         let req = NSURLRequest(URL: requestURL!)
         webView.loadRequest(req)
     }
