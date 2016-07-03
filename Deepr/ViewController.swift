@@ -52,25 +52,17 @@ class ViewController: UIViewController {
         SecondSelectionViewInstance.frame.origin.y = originHeight
         self.MainScrollView.addSubview(SecondSelectionViewInstance)
         
+        // ScrollViewのサイズを新しく追加した分だけ追加する
+        
+        self.MainScrollView.contentSize.height += SecondSelectionViewInstance.frame.origin.y
+        
         // スクロールする
         let scrollPoint = CGPoint(x: 0.0, y: originHeight - (self.navigationController?.navigationBar.frame.size.height)! - 20)
         self.MainScrollView.setContentOffset(scrollPoint, animated: true)
         
-        // SecondSelectionViewInstance.layer.position = CGPoint(x: 0, y:0)
-        // こいつはやめとこう
         
         
-            // いれる
-
-        // SecondSelectionViewInstance.frame.origin = CGPoint(x: 0, y:originHeight)
-        
-        // スクロールする
-        /*
-
- */
     }
-
-
 
 }
 
