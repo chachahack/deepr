@@ -17,17 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deepr!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkR-nK-wdN">
-                                <rect key="frame" x="274" y="289" width="52" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="fKA-1d-zed">
+                                <rect key="frame" x="112.5" y="-33.5" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="2Y7-UO-fQA"/>
+                                    <constraint firstAttribute="width" constant="375" id="Oih-LN-EZG"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.20784313725490194" green="0.27843137254901962" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="kkR-nK-wdN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="5vL-sD-eoP"/>
-                            <constraint firstItem="kkR-nK-wdN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dd5-0l-JBb"/>
+                            <constraint firstItem="fKA-1d-zed" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Epy-Hb-HVs"/>
+                            <constraint firstItem="fKA-1d-zed" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="FHa-Al-2LG"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,4 +37,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch.png" width="750" height="1334"/>
+    </resources>
 </document>

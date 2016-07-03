@@ -4,21 +4,98 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Phenomena-Bold.otf">
+            <string>Phenomena-Bold</string>
+            <string>Phenomena-Bold</string>
+            <string>Phenomena-Bold</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SecondSelectionView" customModule="Deepr" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="329" height="754"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sample Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnH-nz-Xop">
-                    <rect key="frame" x="249" y="301" width="103" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dinner-top.png" translatesAutoresizingMaskIntoConstraints="NO" id="C8j-fV-O07">
+                    <rect key="frame" x="15" y="29" width="300" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="JgM-mZ-tuN"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cn9-YN-2Lf">
+                    <rect key="frame" x="245" y="125" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="9YP-oc-aCz"/>
+                        <constraint firstAttribute="height" constant="70" id="n9H-cQ-pun"/>
+                    </constraints>
+                    <state key="normal" image="cake.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0A-wG-h5i">
+                    <rect key="frame" x="11" y="125" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="SqU-Qh-VjE"/>
+                        <constraint firstAttribute="height" constant="70" id="eji-94-uai"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="noodle.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAy-ys-rlQ">
+                    <rect key="frame" x="167" y="125" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Cjb-QC-rOx"/>
+                        <constraint firstAttribute="height" constant="70" id="Xvt-Hb-hLZ"/>
+                    </constraints>
+                    <state key="normal" image="sushi.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRc-pB-0k8">
+                    <rect key="frame" x="89" y="125" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="PUw-fY-e3F"/>
+                        <constraint firstAttribute="width" constant="70" id="hqq-Mf-9ek"/>
+                    </constraints>
+                    <state key="normal" image="steak.png"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Quick Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqt-q7-A0n">
+                    <rect key="frame" x="14" y="96" width="67" height="21"/>
+                    <fontDescription key="fontDescription" name="Phenomena-Bold" family="Phenomena" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bG9-Qq-xfn">
+                    <rect key="frame" x="15" y="253" width="44" height="21"/>
+                    <fontDescription key="fontDescription" name="Phenomena-Bold" family="Phenomena" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbX-2q-qUH">
+                    <rect key="frame" x="15" y="404" width="32" height="21"/>
+                    <fontDescription key="fontDescription" name="Phenomena-Bold" family="Phenomena" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.92549019607843142" green="0.27843137254901962" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="C8j-fV-O07" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="451-wh-qfN"/>
+                <constraint firstAttribute="bottom" secondItem="C8j-fV-O07" secondAttribute="bottom" constant="546" id="Ele-IJ-DbW"/>
+                <constraint firstItem="gbX-2q-qUH" firstAttribute="leading" secondItem="Jqt-q7-A0n" secondAttribute="leading" id="JMJ-uj-10e"/>
+                <constraint firstItem="A0A-wG-h5i" firstAttribute="bottom" secondItem="kRc-pB-0k8" secondAttribute="bottom" id="RMj-YE-CMb"/>
+                <constraint firstItem="bG9-Qq-xfn" firstAttribute="leading" secondItem="Jqt-q7-A0n" secondAttribute="leading" id="ZCj-qP-Jus"/>
+                <constraint firstItem="A0A-wG-h5i" firstAttribute="top" secondItem="kRc-pB-0k8" secondAttribute="top" id="gVd-gx-JpH"/>
+                <constraint firstItem="NAy-ys-rlQ" firstAttribute="top" secondItem="kRc-pB-0k8" secondAttribute="top" id="llW-R7-Ru8"/>
+                <constraint firstItem="cn9-YN-2Lf" firstAttribute="top" secondItem="kRc-pB-0k8" secondAttribute="top" id="rw8-zX-JZ6"/>
+                <constraint firstItem="cn9-YN-2Lf" firstAttribute="bottom" secondItem="kRc-pB-0k8" secondAttribute="bottom" id="wtF-W2-tnI"/>
+                <constraint firstItem="NAy-ys-rlQ" firstAttribute="bottom" secondItem="kRc-pB-0k8" secondAttribute="bottom" id="z3h-to-YWV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="502.5" y="499"/>
         </view>
     </objects>
+    <resources>
+        <image name="cake.png" width="140" height="140"/>
+        <image name="dinner-top.png" width="600" height="100"/>
+        <image name="noodle.png" width="140" height="140"/>
+        <image name="steak.png" width="140" height="140"/>
+        <image name="sushi.png" width="140" height="140"/>
+    </resources>
 </document>
