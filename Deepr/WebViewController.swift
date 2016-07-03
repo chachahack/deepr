@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class WebViewController: UIViewController {
 
@@ -18,6 +19,13 @@ class WebViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.title = "Deepr!"
+        
+        // BarButtonItemを作成する.
+        let shareButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Action, target: self, action: #selector(WebViewController.shareButtonTapped(_:)))
+        
+        // Barの左側に配置する.
+        self.navigationItem.setRightBarButtonItem(shareButtonItem, animated: true)
+        
         
         let requestURL = NSURL(string: self.hostname + "#/eat?freeword=&lat=35.660617&lng=139.733686")
         let req = NSURLRequest(URL: requestURL!)
@@ -43,6 +51,15 @@ class WebViewController: UIViewController {
         return true
     }
     
+    func shareButtonTapped (sender: UIButton) {
+        var shareText = self.webView.stringByEvaluatingJavaScriptFromString("document.title")!
+        shareText += " " + self.webView.stringByEvaluatingJavaScriptFromString("location.href")!
+        
+        let composeViewController: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
+        composeViewController.setInitialText(shareText)
+        
+        self.presentViewController(composeViewController, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
