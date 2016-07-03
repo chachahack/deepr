@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var MainScrollView: UIScrollView!
     
     var MainSelectionViewInstance = MainSelectionView.instance()
+    var SecondSelectionViewInstance = SecondSelectionView.instance()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,9 @@ class ViewController: UIViewController {
         
         for mainSelection in MainSelectionViewInstance.mailSelections {
             mainSelection.addTarget(self, action: #selector(ViewController.mainButtonTapped(_:)), forControlEvents: .TouchUpInside)
+        }
+        for quickGenre in SecondSelectionViewInstance.quickGenres {
+            quickGenre.addTarget(self, action: #selector(ViewController.quickGenreButtonTapped(_:)), forControlEvents: .TouchUpInside)
         }
         
         self.MainScrollView.addSubview(MainSelectionViewInstance)
@@ -72,6 +76,11 @@ class ViewController: UIViewController {
         
         
         
+    }
+    
+    func quickGenreButtonTapped (sender: UIButton) {
+        performSegueWithIdentifier("customSegue", sender: self)
+        return
     }
     
     override func prefersStatusBarHidden() -> Bool {
