@@ -28,6 +28,8 @@
 		7DB94CA31D278646003B076E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB94CA11D278646003B076E /* LaunchScreen.storyboard */; };
 		7DB94CAE1D278646003B076E /* DeeprTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB94CAD1D278646003B076E /* DeeprTests.swift */; };
 		7DB94CB91D278646003B076E /* DeeprUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB94CB81D278646003B076E /* DeeprUITests.swift */; };
+		7DDDB5191D28C992006E0F5E /* lVoqPal2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DDDB5181D28C992006E0F5E /* lVoqPal2.jpg */; };
+		7DDDB51B1D28CA07006E0F5E /* Unknown.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DDDB51A1D28CA07006E0F5E /* Unknown.png */; };
 		7DF6A7BB1D288B8000032437 /* Phenomena-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF6A7B41D288B8000032437 /* Phenomena-Black.otf */; };
 		7DF6A7BC1D288B8000032437 /* Phenomena-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF6A7B51D288B8000032437 /* Phenomena-Bold.otf */; };
 		7DF6A7BD1D288B8000032437 /* Phenomena-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DF6A7B61D288B8000032437 /* Phenomena-ExtraBold.otf */; };
@@ -108,6 +110,8 @@
 		7DB94CB41D278646003B076E /* DeeprUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeeprUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB94CB81D278646003B076E /* DeeprUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeprUITests.swift; sourceTree = "<group>"; };
 		7DB94CBA1D278646003B076E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DDDB5181D28C992006E0F5E /* lVoqPal2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lVoqPal2.jpg; sourceTree = "<group>"; };
+		7DDDB51A1D28CA07006E0F5E /* Unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unknown.png; sourceTree = "<group>"; };
 		7DF6A7B41D288B8000032437 /* Phenomena-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phenomena-Black.otf"; sourceTree = "<group>"; };
 		7DF6A7B51D288B8000032437 /* Phenomena-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phenomena-Bold.otf"; sourceTree = "<group>"; };
 		7DF6A7B61D288B8000032437 /* Phenomena-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phenomena-ExtraBold.otf"; sourceTree = "<group>"; };
@@ -185,7 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				7DF6A7F01D28964A00032437 /* launch.png */,
+				7DDDB5181D28C992006E0F5E /* lVoqPal2.jpg */,
 				7D6F0E971D283A2B0042D9BA /* coffee_155x250.png */,
+				7DDDB51A1D28CA07006E0F5E /* Unknown.png */,
 				7D6F0E981D283A2B0042D9BA /* dinner_155x250.png */,
 				7D6F0E991D283A2B0042D9BA /* drink_155x250.png */,
 				7D6F0E9A1D283A2B0042D9BA /* lunch_155x250.png */,
@@ -464,11 +470,13 @@
 				7DF6A7F11D28964A00032437 /* launch.png in Resources */,
 				7DF6A7EA1D288CE600032437 /* romantic.png in Resources */,
 				7DF6A7C01D288B8000032437 /* Phenomena-Regular.otf in Resources */,
+				7DDDB51B1D28CA07006E0F5E /* Unknown.png in Resources */,
 				7DB94C9B1D278645003B076E /* Main.storyboard in Resources */,
 				7D6F0E9B1D283A2B0042D9BA /* coffee_155x250.png in Resources */,
 				7DF6A7DE1D288CE600032437 /* french.png in Resources */,
 				7D6F0E9D1D283A2B0042D9BA /* drink_155x250.png in Resources */,
 				7DF6A7DC1D288CE600032437 /* check.png in Resources */,
+				7DDDB5191D28C992006E0F5E /* lVoqPal2.jpg in Resources */,
 				7D6F0E961D2831B10042D9BA /* sample-button.png in Resources */,
 				7DF6A7E41D288CE600032437 /* conceptual.png in Resources */,
 				7DF6A7BD1D288B8000032437 /* Phenomena-ExtraBold.otf in Resources */,

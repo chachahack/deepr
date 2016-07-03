@@ -99,14 +99,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyc-fm-bPs">
-                                <rect key="frame" x="285" y="411" width="30" height="30"/>
+                                <rect key="frame" x="285" y="456" width="30" height="30"/>
                                 <state key="normal" title="OK"/>
                                 <connections>
                                     <segue destination="Biz-jH-vag" kind="show" id="eqN-kF-E3y"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVG-I6-o9l">
-                                <rect key="frame" x="249" y="204" width="102" height="21"/>
+                                <rect key="frame" x="249" y="244" width="102" height="21"/>
                                 <string key="text">こんにちは！
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -114,23 +114,30 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="私はTomです。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezf-bo-Kn6">
-                                <rect key="frame" x="241" y="233" width="119" height="21"/>
+                                <rect key="frame" x="241" y="273" width="119" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="いま美味しいお店を探しているのですが、" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzt-cT-hhj">
-                                <rect key="frame" x="139" y="296" width="323" height="21"/>
+                                <rect key="frame" x="139" y="341" width="323" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="あなたのオススメを教えていただけませんか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edW-WB-yJV">
-                                <rect key="frame" x="122" y="325" width="357" height="21"/>
+                                <rect key="frame" x="122" y="370" width="357" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Unknown.png" translatesAutoresizingMaskIntoConstraints="NO" id="yg0-4E-t1P">
+                                <rect key="frame" x="241" y="103" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="50j-CM-LDa"/>
+                                    <constraint firstAttribute="width" constant="120" id="dfr-G6-SgO"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -139,6 +146,7 @@
                             <constraint firstItem="mzt-cT-hhj" firstAttribute="centerX" secondItem="acD-eT-kQh" secondAttribute="centerX" id="HPx-Oe-A4d"/>
                             <constraint firstItem="edW-WB-yJV" firstAttribute="centerX" secondItem="acD-eT-kQh" secondAttribute="centerX" id="HbB-Ov-USu"/>
                             <constraint firstItem="pVG-I6-o9l" firstAttribute="centerX" secondItem="acD-eT-kQh" secondAttribute="centerX" id="Hwg-C9-hzh"/>
+                            <constraint firstItem="yg0-4E-t1P" firstAttribute="centerX" secondItem="acD-eT-kQh" secondAttribute="centerX" id="LGS-mo-AAb"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -147,4 +155,7 @@
             <point key="canvasLocation" x="1793" y="-137"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Unknown.png" width="400" height="400"/>
+    </resources>
 </document>

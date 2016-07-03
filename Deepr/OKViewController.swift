@@ -9,13 +9,11 @@
 import UIKit
 
 class OKViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-         self.title = "Deepr!"
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
-
-        // Do any additional setup after loading the view.
+        self.title = "Deepr!"
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -45,7 +43,6 @@ class OKViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     override func prefersStatusBarHidden() -> Bool {
