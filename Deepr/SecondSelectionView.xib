@@ -18,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="831"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cn9-YN-2Lf">
+                <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cn9-YN-2Lf">
                     <rect key="frame" x="271" y="112" width="70" height="70"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="70" id="9YP-oc-aCz"/>
@@ -26,15 +26,7 @@
                     </constraints>
                     <state key="normal" image="cake.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0A-wG-h5i">
-                    <rect key="frame" x="35" y="112" width="70" height="70"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="70" id="SqU-Qh-VjE"/>
-                        <constraint firstAttribute="height" constant="70" id="eji-94-uai"/>
-                    </constraints>
-                    <state key="normal" title="Button" image="noodle.png"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAy-ys-rlQ">
+                <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAy-ys-rlQ">
                     <rect key="frame" x="191" y="112" width="70" height="70"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="70" id="Cjb-QC-rOx"/>
@@ -42,7 +34,7 @@
                     </constraints>
                     <state key="normal" image="sushi.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRc-pB-0k8">
+                <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRc-pB-0k8">
                     <rect key="frame" x="113" y="112" width="70" height="70"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="70" id="PUw-fY-e3F"/>
@@ -195,6 +187,14 @@
                         <constraint firstAttribute="height" constant="50" id="vN5-n9-Y96"/>
                     </constraints>
                     <state key="normal" image="dinner-top.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0A-wG-h5i">
+                    <rect key="frame" x="35" y="112" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="SqU-Qh-VjE"/>
+                        <constraint firstAttribute="height" constant="70" id="eji-94-uai"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="noodle.png"/>
                 </button>
             </subviews>
             <constraints>

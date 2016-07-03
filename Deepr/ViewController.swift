@@ -13,8 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var MainScrollView: UIScrollView!
     
     var MainSelectionViewInstance = MainSelectionView.instance()
-    var SecondSelectionViewInstance = SecondSelectionView.instance()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Deepr!"
@@ -26,9 +25,7 @@ class ViewController: UIViewController {
         for mainSelection in MainSelectionViewInstance.mailSelections {
             mainSelection.addTarget(self, action: #selector(ViewController.mainButtonTapped(_:)), forControlEvents: .TouchUpInside)
         }
-        for quickGenre in SecondSelectionViewInstance.quickGenres {
-            quickGenre.addTarget(self, action: #selector(ViewController.quickGenreButtonTapped(_:)), forControlEvents: .TouchUpInside)
-        }
+
         
         self.MainScrollView.addSubview(MainSelectionViewInstance)
         
@@ -56,13 +53,16 @@ class ViewController: UIViewController {
         let img = UIImage(named: "arrow.png")
         nextButton.setImage(img, forState: UIControlState.Normal)
         self.MainScrollView.addSubview(nextButton)
- */
+         */
         
         let originHeight = MainScrollView.bounds.height
         print(originHeight)
         
         // 場所決めてイレル
         let SecondSelectionViewInstance = SecondSelectionView.instance()
+        for quickGenre in SecondSelectionViewInstance.quickGenres {
+            quickGenre.addTarget(self, action: #selector(ViewController.quickGenreButtonTapped(_:)), forControlEvents: .TouchUpInside)
+        }
         SecondSelectionViewInstance.frame.origin.y = originHeight
         self.MainScrollView.addSubview(SecondSelectionViewInstance)
         
@@ -74,12 +74,10 @@ class ViewController: UIViewController {
         let scrollPoint = CGPoint(x: 0.0, y: originHeight - (self.navigationController?.navigationBar.frame.size.height)! - 20)
         self.MainScrollView.setContentOffset(scrollPoint, animated: true)
         
-        
-        
     }
     
     func quickGenreButtonTapped (sender: UIButton) {
-        performSegueWithIdentifier("customSegue", sender: self)
+        print(sender.tag)
         return
     }
     
