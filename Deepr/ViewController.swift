@@ -37,35 +37,37 @@ class ViewController: UIViewController {
     }
     
     func mainButtonTapped(sender: UIButton) {
+        
         print(sender.tag)
         if sender.tag == 3 {
             performSegueWithIdentifier("customSegue", sender: self)
             return
         }
+        
+        let originHeight = MainScrollView.bounds.height
+        print(originHeight)
+        
+        // 場所決めてイレル
         let SecondSelectionViewInstance = SecondSelectionView.instance()
+        SecondSelectionViewInstance.frame.origin.y = originHeight
+        self.MainScrollView.addSubview(SecondSelectionViewInstance)
         
-        /*
-        let width = self.MainScrollView.frame.size.width
-        let height = self.MainScrollView.frame.size.height
-        */
-        SecondSelectionViewInstance.frame = CGRect(
-            x: 0,
-            y: 300,
-            width: 400,
-            height: 400
-        )
+        // スクロールする
+        let scrollPoint = CGPoint(x: 0.0, y: originHeight - (self.navigationController?.navigationBar.frame.size.height)! - 20)
+        self.MainScrollView.setContentOffset(scrollPoint, animated: true)
         
-        let plusheight:CGFloat  = 800.0;
+        // SecondSelectionViewInstance.layer.position = CGPoint(x: 0, y:0)
+        // こいつはやめとこう
+        
+        
+            // いれる
 
-        self.MainScrollView.contentSize = CGSizeMake(
-            self.MainScrollView.contentSize.width,
-            self.MainScrollView.contentSize.height + plusheight
-        )
+        // SecondSelectionViewInstance.frame.origin = CGPoint(x: 0, y:originHeight)
         
-        self.MainScrollView.insertSubview(SecondSelectionViewInstance, belowSubview: MainSelectionViewInstance)
-        
-        let scrollPoint = CGPoint(x: 0.0, y: plusheight)
-        self.MainScrollView.setContentOffset(scrollPoint,animated: true)
+        // スクロールする
+        /*
+
+ */
     }
 
 
