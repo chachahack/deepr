@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Deepr!"
         
+        if let font = UIFont(name: "Phenomena-Black.ttf", size: 24) {
+            UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: font]
+        }
+        
         for mainSelection in MainSelectionViewInstance.mailSelections {
             mainSelection.addTarget(self, action: #selector(ViewController.mainButtonTapped(_:)), forControlEvents: .TouchUpInside)
         }
@@ -62,6 +66,10 @@ class ViewController: UIViewController {
         
         
         
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 
 }

@@ -48,6 +48,10 @@ class OKViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
 
     /*
     // MARK: - Navigation

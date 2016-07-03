@@ -39,6 +39,10 @@ class WebViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
 
     /*
     // MARK: - Navigation
